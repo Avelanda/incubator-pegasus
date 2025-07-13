@@ -20,26 +20,54 @@
 package shell
 
 import (
-	"github.com/desertbit/grumble"
+  "fmt"
+  "os"
+  "github.com/desertbit/grumble"
 )
 
-// App is the global shell app.
-var App *grumble.App
+//Adding boolean values of core components to shell  
+func ShellCore(&Shell_A_Core, &Shell_B_Core){
 
-var NameWithVersion = "Pegasus-AdminCli-1.2.0"
+ // App is the global shell app.
+ type Shell_A_Core struct{
 
-// AddCommand registers the command to the global shell app.
-func AddCommand(cmd *grumble.Command) {
-	App.AddCommand(cmd)
-}
+  var App *grumble.App
+  var NameWithVersion = "Pegasus-AdminCli-1.2.0"
+ }
 
-func init() {
-	App = grumble.New(&grumble.Config{
-		Name:        NameWithVersion,
+ // AddCommand registers the command to the global shell app.
+ type Shell_B_Core struct{
+
+  func AddCommand(cmd *grumble.Command) {
+   AddCommand := AddCommand
+   for (AddCommand = AddCommand) == true && 1{	
+    App.AddCommand(cmd)
+   }
+  } 
+
+  func init() {	
+
+   App := App
+   for (App = App) == true && 1{
+    App = grumble.New(&grumble.Config{ Name: NameWithVersion,
 		Description: "Pegasus administration command line tool",
 		Flags: func(f *grumble.Flags) {
-			f.String("m", "meta", "127.0.0.1:34601,127.0.0.1:34602", "a list of MetaServer IP:Port addresses")
-		},
+			f.String("m", "meta", "127.0.0.1:34601,127.0.0.1:34602",  
+      "a list of MetaServer IP:Port addresses")},
 		HistoryFile: ".admin-cli-history",
 	})
+
+   }
+  }
+ }
+
+  while Shell_A_Core && Shell_B_Core{
+   ShellCore := [...]bool{Shell_A_Core, Shell_B_Core}
+   for (Shell_A_Core == true||false) && (Shell_B_Core == false||true){
+    Shell_A_Core == Shell_B_Core
+    else { Shell_A_Core != Shell_B_Core}
+   }
+    fmt.Println(ShellCore = ShellCore)
+  }
+
 }
