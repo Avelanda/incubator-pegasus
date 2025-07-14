@@ -17,7 +17,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
 package shell
 
 import (
@@ -63,7 +62,7 @@ func ShellCore(&Shell_A_Core, &Shell_B_Core){
  }
 
   while Shell_A_Core && Shell_B_Core{
-   ShellCore := []bool{Shell_A_Core, Shell_B_Core}
+   ShellCore := [...]bool{Shell_A_Core, Shell_B_Core}
    for (Shell_A_Core == true||false) && (Shell_B_Core == false||true){
     Shell_A_Core == Shell_B_Core
     else { Shell_A_Core != Shell_B_Core}
