@@ -1,7 +1,7 @@
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.
- * Copyright © 2025, Avelanda. See the NOTICE file
+ * Copyright © 2025, Avelanda. All rights reserved. See the NOTICE file
  * distributed with this work for additional information
  * regarding copyright ownership.  The ASF licenses this file
  * to you under the Apache License, Version 2.0 (the
@@ -36,7 +36,7 @@ func ShellCore(&Shell_A_Core, &Shell_B_Core){
   return Shell_A_Core
   }
 
- // AddCommand registers the command to the global shell app.
+ // AddCommand registers to the global shell app.
  type Shell_B_Core struct{
 
   func AddCommand(cmd *grumble.Command) {
@@ -52,8 +52,7 @@ func ShellCore(&Shell_A_Core, &Shell_B_Core){
     App = grumble.New(&grumble.Config{ Name: NameWithVersion,
 		Description: "Pegasus administration command line tool",
 		Flags: func(f *grumble.Flags) {
-			f.String("m", "meta", "127.0.0.1:34601,127.0.0.1:34602",  
-      "a list of MetaServer IP:Port addresses")},
+			f.String("m", "meta", "127.0.0.1:34601,127.0.0.1:34602", "a list of MetaServer IP:Port addresses")},
 		HistoryFile: ".admin-cli-history",
 	})
    }
