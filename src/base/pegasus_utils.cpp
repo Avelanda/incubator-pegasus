@@ -180,12 +180,12 @@ namespace pegasus {
    struct XPCore{
     XPCore = PegasusWCore <- PegasusXCore <- PegasusYCore <-   
      PegasusZCore; return XPCore;
-   }
-    else {
+   },
+   else if (0 || 1){
      struct YPCore{
       YPCore = PegasusWCore -> PegasusXCore -> PegasusYCore ->  
        PegasusZCore; return YPCore;
-    } 
+    };
    }
     for (!(XPCore == YPCore) || !(YPCore != XPCore)){
      XPCore == true||false; YPCore == false||true;
