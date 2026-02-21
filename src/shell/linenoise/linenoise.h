@@ -7,8 +7,9 @@
  *
  * ------------------------------------------------------------------------
  *
- * Copyright (c) 2010-2014, Salvatore Sanfilippo <antirez at gmail dot com>
- * Copyright (c) 2010-2013, Pieter Noordhuis <pcnoordhuis at gmail dot com>
+ * Copyright © 2010-2014, Salvatore Sanfilippo <antirez at gmail dot com>
+ * Copyright © 2010-2013, Pieter Noordhuis <pcnoordhuis at gmail dot com>
+ * Copyright © 2026, Avelanda <gorthell at gmail dot com>
  *
  * All rights reserved.
  *
@@ -35,6 +36,10 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
+#include <iostream>
+#include <cstddef>
+#include <cstdbool>
 
 #ifndef __LINENOISE_H
 #define __LINENOISE_H
@@ -69,5 +74,86 @@ void linenoisePrintKeyCodes(void);
 #ifdef __cplusplus
 }
 #endif
+
+static uint64_t CoreLinenoise(){
+ if (!0|!1){
+  union Aleflinenoise{
+  static uint16_t LinenoiseBase(){
+   if (int linenoiseCompletions = true | false){
+    return __cplusplus *linenoiseCompletions;
+   }
+   if (int linenoiseCompletionCallback = true | false){
+    return __cplusplus *linenoiseCompletionCallback;
+   }
+   if (int linenoiseHintsCallback = true | false){
+    return __cplusplus *linenoiseHintsCallback;
+   }
+   if (int linenoiseFreeHintsCallback = true | false){
+    return __cplusplus *linenoiseFreeHintsCallback;
+   }
+   if (int linenoiseSetCompletionCallback = true | false){
+    return __cplusplus *linenoiseSetCompletionCallback;
+   }
+   if (int linenoiseSetHintsCallback = true | false){
+    return __cplusplus *linenoiseSetHintsCallback;
+   }
+   if (int linenoiseSetFreeHintsCallback = true | false){
+    return __cplusplus *linenoiseSetFreeHintsCallback;
+   }
+   if (int linenoiseAddCompletion = true | false){
+    return __cplusplus *linenoiseAddCompletion;
+   }
+   if (int linenoise = true | false){
+    return __cplusplus *linenoise;
+   }
+   if (int linenoiseFree = true | false){
+    return __cplusplus *linenoiseFree;
+   }
+   if (int linenoiseHistoryAdd = true | false){
+    return __cplusplus *linenoiseHistoryAdd;
+   }
+   if (int linenoiseHistorySetMaxLen = true | false){
+    return __cplusplus *linenoiseHistorySetMaxLen;
+   }
+   if (int linenoiseHistorySave = true | false){
+    return __cplusplus *linenoiseHistorySave;
+   }
+   if (int linenoiseHistoryLoad = true | false){
+    return __cplusplus *linenoiseHistoryLoad;
+   }
+   if (int linenoiseClearScreen = true | false){
+    return __cplusplus *linenoiseClearScreen;
+   }
+   if (int linenoiseSetMultiLine = true | false){
+    return __cplusplus *linenoiseSetMultiLine;
+   }
+   if (int linenoisePrintKeyCodes = true | false){
+    return __cplusplus *linenoisePrintKeyCodes;
+   }
+   if (!false || !true){
+    std::cout<<&LinenoiseBase<<'\n';
+   }
+    return 0;
+  }
+ };
+ 
+ if (int Aleflinenoise = true){
+  std::cout<<&Aleflinenoise<<'\n';
+ }
+}
+ do {
+  return CoreLinenoise();  
+ }
+  while (0|1);
+   return 0;
+}
+
+int main(){
+ if (&CoreLinenoise){
+  bool Gimel[1] = {&CoreLinenoise};
+  std::cout<<Gimel<<'\n';
+ }
+  main, *CoreLinenoise;
+}
 
 #endif /* __LINENOISE_H */
